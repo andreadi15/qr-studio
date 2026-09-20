@@ -1,0 +1,47 @@
+# Dependensi
+node_modules
+.pnp
+.pnp.js
+
+# Hasil build
+dist
+dist-ssr
+build
+
+# TypeScript (dibuat oleh `tsc -b`)
+*.tsbuildinfo
+
+# Log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment (proyek ini tidak memakai env var, tapi jaga-jaga)
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
+
+# Editor dan OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache alat lain
+.cache
+.eslintcache
+.vite
+coverage

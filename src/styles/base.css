@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-7);
+}
+
+.page__head {
+  margin-bottom: var(--space-5);
+}
+
+.page__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.page__sub {
+  color: var(--muted);
+  max-width: 52ch;
+  margin-top: var(--space-1);
+}
+
+.page__privacy {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-top: var(--space-2);
+}
+
+.layout {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 860px) {
+  .page__title {
+    font-size: 2.2rem;
+  }
+
+  .layout {
+    grid-template-columns: minmax(300px, 400px) 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+}
