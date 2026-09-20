@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { InputSection } from './components/InputSection';
 import { LogoSection } from './components/LogoSection';
 import { ColorSection } from './components/ColorSection';
@@ -159,6 +160,7 @@ export default function App() {
           />
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
