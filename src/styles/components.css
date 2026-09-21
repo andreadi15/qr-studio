@@ -218,10 +218,13 @@
 }
 
 /* ---------- Preview ---------- */
+/* Kolom pratinjau bersifat sticky: beri z-index tinggi agar selalu di atas
+   panel, tombol, dan elemen lain yang dilewatinya saat halaman digulir. */
 .preview-col {
   position: sticky;
   top: calc(env(safe-area-inset-top) + 8px);
   align-self: start;
+  z-index: 9999;
 }
 
 .preview {
